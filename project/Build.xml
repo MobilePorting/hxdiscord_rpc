@@ -18,7 +18,7 @@
 		<compilerflag value="-I${haxelib:hxdiscord_rpc}/project/discord-rpc/include" />
 
 		<compilerflag value="-DRAPIDJSON_SSE2" if="MSVC_VER" unless="HXCPP_M64 || HXCPP_ARM64" />
-		<compilerflag value="-DRAPIDJSON_NEON" if="MSVC_VER" if="HXCPP_ARM64" />
+		<compilerflag value="-DRAPIDJSON_NEON" if="MSVC_VER HXCPP_ARM64" />
 
 		<compilerflag value="-I${haxelib:hxdiscord_rpc}/project/rapidjson/include" />
 
